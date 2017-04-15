@@ -1,0 +1,7 @@
+Solution to HITB 2017 CTF Crypto-100 challenge
+==============================================
+
+Challenge: find S such that for given P, M1(1), M2(1), M1(2), M2(2),
+SHA1(P||M1(1)||M2(1)||S) == SHA1(P||M1(2)||M2(2)||S) and the last 32 bits of the hash are 0.
+
+This is fairly easy: just brute force an S until the last 32 bits of the hash are 0.
